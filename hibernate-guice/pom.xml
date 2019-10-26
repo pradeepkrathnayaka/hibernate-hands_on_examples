@@ -2,13 +2,13 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>HibernateTestConnection</groupId>
-	<artifactId>HibernateTestConnection</artifactId>
+	<groupId>com.rmpksoft</groupId>
+	<artifactId>hibernate-guice</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
 		<guice.version>4.2.2</guice.version>
-		<hibernate.version>5.4.5.Final</hibernate.version>
+		<hibernate.version>5.4.7.Final</hibernate.version>
 
 		<h2.version>1.4.199</h2.version>
 
@@ -19,33 +19,35 @@
 	</properties>
 
 	<dependencies>
+
+		<!-- Guice libraries -->
 		<dependency>
 			<groupId>com.google.inject</groupId>
 			<artifactId>guice</artifactId>
-			<version>4.2.2</version>
+			<version>${guice.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.google.inject.extensions</groupId>
 			<artifactId>guice-persist</artifactId>
-			<version>4.2.2</version>
+			<version>${guice.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.google.inject.extensions</groupId>
 			<artifactId>guice-multibindings</artifactId>
-			<version>4.2.2</version>
+			<version>${guice.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>com.google.inject.extensions</groupId>
 			<artifactId>guice-testlib</artifactId>
-			<version>4.2.2</version>
+			<version>${guice.version}</version>
 			<scope>test</scope>
 		</dependency>
 
 		<dependency>
 			<groupId>com.google.inject</groupId>
 			<artifactId>jdk8-tests</artifactId>
-			<version>4.2.2</version>
+			<version>${guice.version}</version>
 		</dependency>
 
 		<!-- Hibernate libraries -->
